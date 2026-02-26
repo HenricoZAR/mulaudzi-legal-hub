@@ -3,7 +3,7 @@
 # Mulaudzi John Incorporated Attorneys — Landing Page (Sections 1–5)
 
 ## Overview
-A premium, professional law firm landing page. Brand colors: gold (#e09c09), black (#000000), white (#ffffff). Heading font: Playfair Display (serif). Body font: Poppins. Fully responsive.
+A premium, professional law firm landing page. Brand colors: gold (#e09c09), black (#000000), white (#ffffff). Heading font: Playfair Display (serif). Body font: Satoshi. Fully responsive.
 
 **All images now available:**
 - Logo: MJLogoMain.png
@@ -33,7 +33,7 @@ A premium, professional law firm landing page. Brand colors: gold (#e09c09), bla
   - **Slide 1:** "Trustworthy and Dependable" (gold, small heading font) + "We Provide Customised Solutions…" (white, large heading) — hero_1_1.jpg slides in from right with decorative gold border frame (square top-left, rounded top-right, rounded bottom-left, square bottom-right)
   - **Slide 2:** "Your Guardian In Law" (gold, small heading font) + "To Complex Legal Solutions" (white, large heading) — hero_1_2.png slides in from right with same frame style
 - Gold "Contact Us →" CTA button (white bg + black text on hover)
-- Testimonial area: 3 overlapping circular placeholder avatars, "More than +2k happy clients" (white), 5 gold stars, "4.5/5 (15k+ Reviews)" (grey, Poppins)
+- Testimonial area: 3 overlapping circular placeholder avatars, "More than +2k happy clients" (white), 5 gold stars, "4.5/5 (15k+ Reviews)" (grey, Satoshi)
 - Bottom-right scroll-down half-circle: black with white downward arrow, turns gold on hover, smooth-scrolls to Section 2
 
 ---
@@ -49,7 +49,7 @@ A premium, professional law firm landing page. Brand colors: gold (#e09c09), bla
 
 ### Right: Content
 - "About Us" (gold, heading font, smaller) + "Welcome To Mulaudzi John Incorporated" (black, large heading font)
-- Firm description paragraph (Poppins, dark grey): "Mulaudzi John Incorporated Attorneys is a black-owned law firm committed to offering value adding and innovative legal services to its clients. Based in Woodmead, Johannesburg, the firm covers a large spectrum of legal services."
+- Firm description paragraph (Satoshi, dark grey): "Mulaudzi John Incorporated Attorneys is a black-owned law firm committed to offering value adding and innovative legal services to its clients. Based in Woodmead, Johannesburg, the firm covers a large spectrum of legal services."
 - 4 bullet points with check icons:
   - We help clients understand their legal rights and obligations
   - We provide clients with information, guidance and support
@@ -79,7 +79,7 @@ A premium, professional law firm landing page. Brand colors: gold (#e09c09), bla
 - Each card (light grey background, rounded corners):
   - Gold legal icon in white circle
   - Service title (heading font, black)
-  - Description text (Poppins, dark grey, left-aligned)
+  - Description text (Satoshi, dark grey, left-aligned)
   - "Read More →" text link (black, no background)
   - Gold bottom border accent on rounded bottom corners
 - **Hover state:** Card background → black, text → white, title → gold on hover, "Read More" → gold on hover, icon: gold → white, white circle → gold. Reverts on mouse leave.
@@ -110,8 +110,7 @@ A premium, professional law firm landing page. Brand colors: gold (#e09c09), bla
 - Single-page layout with smooth scroll between sections
 - CSS animations for hero slides, counter increments, gavel float, rotating text badge
 - Intersection Observer for scroll-triggered animations (counters, card slide-ins)
-- Google Fonts: Playfair Display + Poppins
+- Google Fonts: Playfair Display | Fontshare: Satoshi
 - All uploaded images used directly — no placeholders
 - Fully responsive following the provided mobile mockup references
 - **Scope:** Sections 1–5 only — remaining sections and footer to follow in a later phase
-
