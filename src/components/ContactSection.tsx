@@ -9,7 +9,7 @@ const ContactSection = () => {
         <div className="bg-secondary rounded-3xl p-6 md:p-10 lg:p-14">
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
             {/* Left: Contact Form */}
-            <div className="flex-1 bg-[hsl(195,30%,30%)] rounded-2xl p-8 md:p-10">
+            <div className="flex-1 bg-gold rounded-2xl p-8 md:p-10">
               <div className="text-center mb-8">
                 <p className="font-heading text-foreground text-sm mb-2">Have Any Questions?</p>
                 <h2 className="font-heading text-2xl md:text-3xl font-bold text-background">
