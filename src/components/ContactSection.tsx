@@ -24,7 +24,7 @@ const ContactSection = () => {
                     placeholder="Name"
                     className="w-full bg-background rounded-full px-6 py-3.5 font-body text-sm text-foreground placeholder:text-muted-foreground outline-none"
                   />
-                  <User className="absolute right-5 top-1/2 -translate-y-1/2 w-5 h-5 text-gold" />
+                  <User className="absolute right-5 top-1/2 -translate-y-1/2 w-5 h-5 text-foreground" />
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4">
