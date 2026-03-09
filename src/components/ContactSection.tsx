@@ -52,7 +52,7 @@ const ContactSection = () => {
                     rows={5}
                     className="w-full bg-background rounded-2xl px-6 py-4 font-body text-sm text-foreground placeholder:text-muted-foreground outline-none resize-none"
                   />
-                  <Pen className="absolute right-5 top-5 w-5 h-5 text-gold" />
+                  <Pen className="absolute right-5 top-5 w-5 h-5 text-foreground" />
                 </div>
 
                 <button
