@@ -9,7 +9,7 @@ const ContactSection = () => {
         <div className="bg-secondary rounded-3xl p-6 md:p-10 lg:p-14">
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
             {/* Left: Contact Form */}
-            <div className="flex-1 bg-[hsl(195,30%,30%)] rounded-2xl p-8 md:p-10">
+            <div className="flex-1 bg-gold rounded-2xl p-8 md:p-10">
               <div className="text-center mb-8">
                 <p className="font-heading text-foreground text-sm mb-2">Have Any Questions?</p>
                 <h2 className="font-heading text-2xl md:text-3xl font-bold text-background">
@@ -24,7 +24,7 @@ const ContactSection = () => {
                     placeholder="Name"
                     className="w-full bg-background rounded-full px-6 py-3.5 font-body text-sm text-foreground placeholder:text-muted-foreground outline-none"
                   />
-                  <User className="absolute right-5 top-1/2 -translate-y-1/2 w-5 h-5 text-gold" />
+                  <User className="absolute right-5 top-1/2 -translate-y-1/2 w-5 h-5 text-foreground" />
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4">
@@ -34,7 +34,7 @@ const ContactSection = () => {
                       placeholder="Email"
                       className="w-full bg-background rounded-full px-6 py-3.5 font-body text-sm text-foreground placeholder:text-muted-foreground outline-none"
                     />
-                    <Mail className="absolute right-5 top-1/2 -translate-y-1/2 w-5 h-5 text-gold" />
+                    <Mail className="absolute right-5 top-1/2 -translate-y-1/2 w-5 h-5 text-foreground" />
                   </div>
                   <div className="relative flex-1">
                     <input
@@ -42,7 +42,7 @@ const ContactSection = () => {
                       placeholder="Number"
                       className="w-full bg-background rounded-full px-6 py-3.5 font-body text-sm text-foreground placeholder:text-muted-foreground outline-none"
                     />
-                    <Phone className="absolute right-5 top-1/2 -translate-y-1/2 w-5 h-5 text-gold" />
+                    <Phone className="absolute right-5 top-1/2 -translate-y-1/2 w-5 h-5 text-foreground" />
                   </div>
                 </div>
 
@@ -52,7 +52,7 @@ const ContactSection = () => {
                     rows={5}
                     className="w-full bg-background rounded-2xl px-6 py-4 font-body text-sm text-foreground placeholder:text-muted-foreground outline-none resize-none"
                   />
-                  <Pen className="absolute right-5 top-5 w-5 h-5 text-gold" />
+                  <Pen className="absolute right-5 top-5 w-5 h-5 text-foreground" />
                 </div>
 
                 <button
@@ -77,8 +77,8 @@ const ContactSection = () => {
                 <img
                   src={johnContact}
                   alt="Mr. John Mulaudzi"
-                  className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[320px] object-contain"
-                  style={{ transform: "translateX(-50%) scaleX(-1)" }}
+                  className="absolute bottom-0 left-1/2 -translate-x-1/2 object-contain"
+                  style={{ transform: "translateX(-50%) scaleX(-1)", width: "90%", height: "115%" }}
                 />
               </div>
             </div>

@@ -2,7 +2,7 @@ import { Phone, Mail, MapPin } from "lucide-react";
 
 const TopBar = () => {
   return (
-    <div className="bg-foreground text-background py-2 px-4 text-sm font-body hidden md:block">
+    <div className="bg-foreground text-background py-3 px-4 text-sm font-body hidden md:block">
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center gap-4">
           <a href="tel:0112588846" className="flex items-center gap-1.5 hover:text-gold transition-colors">

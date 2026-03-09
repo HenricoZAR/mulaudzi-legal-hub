@@ -1,15 +1,15 @@
 import { ArrowRight, Check } from "lucide-react";
 import aboutLeft from "@/assets/about-1-left.jpg";
-import aboutJohn from "@/assets/John.jpg";
+import aboutJohn from "@/assets/John_2.jpg";
 import aboutRight2 from "@/assets/about-1-right-2.jpg";
 import aboutCircle from "@/assets/about-circle.png";
 import aboutGavel from "@/assets/about-gavel.png";
 
 const bulletPoints = [
-  "We help clients understand their legal rights and obligations",
-  "We provide clients with information, guidance and support",
-  "All legal documentation are accurate and legally binding",
-  "Courtroom Representation by our lawyers",
+  "Legal Advice",
+  "Counselling",
+  "Document Preparation",
+  "Representation",
 ];
 
 const AboutSection = () => {
@@ -26,7 +26,7 @@ const AboutSection = () => {
                 src={aboutLeft}
                 alt="Scales of justice"
                 className="relative z-10 w-full h-full object-cover rounded-tl-2xl rounded-bl-2xl rounded-br-2xl"
-                style={{ minHeight: "380px" }}
+                style={{ minHeight: "420px" }}
               />
             </div>
 
@@ -35,7 +35,7 @@ const AboutSection = () => {
               <img
                 src={aboutJohn}
                 alt="Mr. John Mulaudzi"
-                className="w-full h-[185px] object-cover rounded-tl-2xl rounded-tr-2xl rounded-br-2xl"
+                className="w-full h-[205px] object-cover rounded-tl-2xl rounded-tr-2xl rounded-br-2xl"
               />
             </div>
 
@@ -44,7 +44,7 @@ const AboutSection = () => {
               <img
                 src={aboutRight2}
                 alt="Gavel on book"
-                className="w-full h-[185px] object-cover rounded-tr-2xl rounded-bl-2xl rounded-br-2xl"
+                className="w-full h-[205px] object-cover rounded-tr-2xl rounded-bl-2xl rounded-br-2xl"
               />
             </div>
           </div>
@@ -61,9 +61,11 @@ const AboutSection = () => {
               {/* Rotating text */}
               <svg className="absolute inset-0 w-full h-full animate-rotate-slow" viewBox="0 0 112 112">
                 <defs>
-                  <path id="circlePath" d="M56,56 m-48,0 a48,48 0 1,1 96,0 a48,48 0 1,1 -96,0" />
+                  <path id="circlePath" d="M56,56 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0" />
                 </defs>
-                <text fill="hsl(42, 90%, 46%)" fontSize="8.5" fontFamily="Satoshi, sans-serif" fontWeight="600" letterSpacing="3">
+                {/* Black background ring for text */}
+                <circle cx="56" cy="56" r="50" fill="none" stroke="hsl(0, 0%, 0%)" strokeWidth="12" opacity="0.85" />
+                <text fill="hsl(42, 90%, 46%)" fontSize="8" fontFamily="Satoshi, sans-serif" fontWeight="600" letterSpacing="3.5">
                   <textPath href="#circlePath">MULAUDZI JOHN INCORPORATED ATTORNEYS •</textPath>
                 </text>
               </svg>
@@ -87,7 +89,7 @@ const AboutSection = () => {
                 <div className="w-5 h-5 rounded-full bg-gold flex items-center justify-center flex-shrink-0 mt-0.5">
                   <Check className="w-3 h-3 text-gold-foreground" />
                 </div>
-                <span className="text-sm">{point}</span>
+                <span className="text-muted-foreground">{point}</span>
               </li>
             ))}
           </ul>
@@ -104,7 +106,7 @@ const AboutSection = () => {
             <img
               src={aboutGavel}
               alt="Gavel"
-              className="w-20 h-20 object-contain animate-gavel-float hidden md:block"
+              className="w-48 h-48 object-contain animate-gavel-float hidden md:block"
             />
           </div>
         </div>
