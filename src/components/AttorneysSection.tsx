@@ -14,8 +14,10 @@ const attorneys = [
 const AttorneysSection = () => {
   const [startIdx, setStartIdx] = useState(0);
 
-  const next = () => setStartIdx((p) => Math.min(p + 1, attorneys.length - 1));
+  const next = () => setStartIdx((p) => Math.min(p + 1, attorneys.length - 2));
   const prev = () => setStartIdx((p) => Math.max(p - 1, 0));
+
+  const visibleAttorneys = attorneys.slice(startIdx, startIdx + 2);
 
   return (
     <section
@@ -51,28 +53,30 @@ const AttorneysSection = () => {
           <div className="flex justify-end gap-2 mb-4">
             <button
               onClick={prev}
-              className="w-10 h-10 rounded-full bg-background/20 hover:bg-gold flex items-center justify-center transition-colors"
+              disabled={startIdx === 0}
+              className="w-10 h-10 rounded-full bg-background/20 hover:bg-gold disabled:opacity-40 flex items-center justify-center transition-colors"
               aria-label="Previous"
             >
               <ChevronLeft className="w-5 h-5 text-background" />
             </button>
             <button
               onClick={next}
-              className="w-10 h-10 rounded-full bg-background/20 hover:bg-gold flex items-center justify-center transition-colors"
+              disabled={startIdx >= attorneys.length - 2}
+              className="w-10 h-10 rounded-full bg-background/20 hover:bg-gold disabled:opacity-40 flex items-center justify-center transition-colors"
               aria-label="Next"
             >
               <ChevronRight className="w-5 h-5 text-background" />
             </button>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {attorneys.map((attorney) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {visibleAttorneys.map((attorney) => (
               <div
                 key={attorney.name}
                 className="group relative rounded-xl overflow-hidden border-b-4 border-gold bg-background cursor-pointer"
               >
                 {/* Image */}
-                <div className="relative overflow-hidden h-[320px]">
+                <div className="relative overflow-hidden h-[380px]">
                   <img
                     src={attorney.image}
                     alt={attorney.name}

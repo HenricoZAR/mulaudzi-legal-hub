@@ -37,8 +37,8 @@ const TestimonialsSection = () => {
   const [hoveredQuote, setHoveredQuote] = useState<number | null>(null);
 
   const maxIndex = testimonials.length - 2;
-  const next = () => setCurrentIndex((p) => Math.min(p + 1, maxIndex));
-  const prev = () => setCurrentIndex((p) => Math.max(p - 1, 0));
+  const next = () => setCurrentIndex((p) => (p >= maxIndex ? 0 : p + 1));
+  const prev = () => setCurrentIndex((p) => (p <= 0 ? maxIndex : p - 1));
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -49,7 +49,7 @@ const TestimonialsSection = () => {
 
   return (
     <section id="testimonials" className="py-20 lg:py-28 bg-secondary relative overflow-hidden">
-      {/* Faded dotted world map background */}
+      {/* Faded dotted background */}
       <div className="absolute inset-0 opacity-[0.06]" style={{
         backgroundImage: `radial-gradient(circle, hsl(var(--gold)) 1px, transparent 1px)`,
         backgroundSize: '20px 20px',
@@ -91,7 +91,14 @@ const TestimonialsSection = () => {
             {testimonials.map((t, i) => (
               <div
                 key={i}
-                className="min-w-[calc(50%-12px)] flex-shrink-0 bg-background rounded-2xl p-8 relative shadow-sm border-b-4 border-gold"
+                className="min-w-[calc(50%-12px)] flex-shrink-0 bg-background rounded-2xl p-8 relative shadow-sm"
+                style={{
+                  borderBottomWidth: '4px',
+                  borderBottomStyle: 'solid',
+                  borderBottomColor: 'hsl(var(--gold))',
+                  borderBottomLeftRadius: '1rem',
+                  borderBottomRightRadius: '1rem',
+                }}
               >
                 {/* Quote icon top-right */}
                 <div

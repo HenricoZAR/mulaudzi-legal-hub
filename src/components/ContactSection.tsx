@@ -77,8 +77,8 @@ const ContactSection = () => {
                 <img
                   src={johnContact}
                   alt="Mr. John Mulaudzi"
-                  className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[320px] object-contain"
-                  style={{ transform: "translateX(-50%) scaleX(-1)" }}
+                  className="absolute bottom-0 left-1/2 -translate-x-1/2 object-contain"
+                  style={{ transform: "translateX(-50%) scaleX(-1)", width: "90%", height: "115%" }}
                 />
               </div>
             </div>

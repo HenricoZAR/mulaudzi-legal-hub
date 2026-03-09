@@ -35,7 +35,7 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between py-3 px-4">
         {/* Logo */}
         <a href="#" className="flex-shrink-0">
-          <img src={logo} alt="Mulaudzi John Incorporated Attorneys" className="h-14 w-auto" />
+          <img src={logo} alt="Mulaudzi John Incorporated Attorneys" className="h-20 w-auto" />
         </a>
 
         {/* Desktop Nav */}

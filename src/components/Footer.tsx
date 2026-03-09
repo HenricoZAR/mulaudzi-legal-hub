@@ -140,7 +140,7 @@ const Footer = () => {
       <div className="bg-gold px-4 py-4">
         <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
           <p className="font-body text-sm text-background">
-            Copyright © 2026 <span className="text-foreground font-semibold">Mulaudzi John Attorneys Incorporated</span>. All Rights Reserved.
+            Copyright © 2026 <span className="text-foreground font-semibold">Mulaudzi John Attorneys Incorporated</span> All Rights Reserved.
           </p>
           <div className="flex gap-2 font-body text-sm text-background mt-2 sm:mt-0">
             {["Disclaimer", "Privacy", "Terms"].map((item, i) => (
