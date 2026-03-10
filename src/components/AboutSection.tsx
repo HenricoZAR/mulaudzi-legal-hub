@@ -40,11 +40,11 @@ const AboutSection = () => {
             </div>
 
             {/* Bottom right */}
-            <div className="col-span-2 mt-1">
+            <div className="col-span-2 mt-2">
               <img
                 src={aboutRight2}
                 alt="Gavel on book"
-                className="w-full h-[185px] object-cover rounded-tr-2xl rounded-bl-2xl rounded-br-2xl"
+                className="w-full h-[145px] object-cover rounded-tr-2xl rounded-bl-2xl rounded-br-2xl"
               />
             </div>
           </div>
