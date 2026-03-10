@@ -35,8 +35,16 @@ const testimonials = [
 const TestimonialsSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [hoveredQuote, setHoveredQuote] = useState<number | null>(null);
+  const [isMobile, setIsMobile] = useState(false);
 
-  const maxIndex = testimonials.length - 2;
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
+
+  const maxIndex = isMobile ? testimonials.length - 1 : testimonials.length - 2;
   const next = () => setCurrentIndex((p) => (p >= maxIndex ? 0 : p + 1));
   const prev = () => setCurrentIndex((p) => (p <= 0 ? maxIndex : p - 1));
 
