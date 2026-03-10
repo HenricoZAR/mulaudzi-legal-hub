@@ -94,7 +94,7 @@ const TestimonialsSection = () => {
         <div className="overflow-hidden">
           <div
             className="flex gap-6 transition-transform duration-500 ease-in-out"
-            style={{ transform: `translateX(-${currentIndex * (window.innerWidth < 768 ? 100 : 50)}%)` }}
+            style={{ transform: `translateX(-${currentIndex * (isMobile ? 100 : 50)}%)` }}
           >
             {testimonials.map((t, i) => (
               <div
