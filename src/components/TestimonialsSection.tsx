@@ -10,7 +10,7 @@ const testimonials = [
     image: thaboImg,
     name: "Thabo Nkosi",
     title: "Operations Manager, Johannesburg",
-    text: "Mulaudzi Attorneys handled our complex commercial litigation matter with exceptional professionalism and attention to detail. From the initial consultation to the successful resolution, they were always responsive, clear in their communication, and fiercely protective of our interests. Their deep understanding of South African business law gave us real confidence throughout the process. I would not hesitate to recommend them to any company needing reliable, results-driven legal support.",
+    text: "Mulaudzi Attorneys handled our complex commercial litigation matter with exceptional professionalism and attention to detail.",
   },
   {
     image: nalediImg,
