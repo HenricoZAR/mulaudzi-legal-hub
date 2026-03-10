@@ -16,7 +16,7 @@ const testimonials = [
     image: nalediImg,
     name: "Naledi Mokoena",
     title: "Small Business Owner, Pretoria",
-    text: "I approached Mulaudzi Attorneys when I needed help with a tricky partnership dispute and contract restructuring. They took the time to understand my business fully and provided practical, straightforward advice that actually protected my interests. The matter was resolved efficiently without unnecessary delays or excessive costs. Their friendly yet professional approach made a stressful situation much easier. I now refer them to other entrepreneurs whenever legal issues arise.",
+    text: "Their friendly yet professional approach made a stressful situation much easier. I refer them to other entrepreneurs with legal issues",
   },
   {
     image: siphoImg,
