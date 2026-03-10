@@ -102,7 +102,7 @@ const HeroSection = () => {
         </div>
 
         {/* Right: Slide Image */}
-        <div className="flex-1 flex justify-center lg:justify-end pl-4 lg:pl-8">
+        <div className="flex-1 flex justify-center lg:justify-end pr-8 lg:pr-12">
           <div className="relative">
             {/* Gold decorative border */}
             <div className="absolute -inset-3 border-2 border-gold rounded-tr-3xl rounded-bl-3xl rounded-tl-none rounded-br-none z-0" />

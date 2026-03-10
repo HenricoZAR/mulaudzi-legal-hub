@@ -10,25 +10,25 @@ const testimonials = [
     image: thaboImg,
     name: "Thabo Nkosi",
     title: "Operations Manager, Johannesburg",
-    text: "Mulaudzi Attorneys handled our complex commercial litigation matter with exceptional professionalism and attention to detail. From the initial consultation to the successful resolution, they were always responsive, clear in their communication, and fiercely protective of our interests. Their deep understanding of South African business law gave us real confidence throughout the process. I would not hesitate to recommend them to any company needing reliable, results-driven legal support.",
+    text: "Mulaudzi Attorneys handled our complex commercial litigation matter with exceptional professionalism and attention to detail.",
   },
   {
     image: nalediImg,
     name: "Naledi Mokoena",
     title: "Small Business Owner, Pretoria",
-    text: "I approached Mulaudzi Attorneys when I needed help with a tricky partnership dispute and contract restructuring. They took the time to understand my business fully and provided practical, straightforward advice that actually protected my interests. The matter was resolved efficiently without unnecessary delays or excessive costs. Their friendly yet professional approach made a stressful situation much easier. I now refer them to other entrepreneurs whenever legal issues arise.",
+    text: "Their friendly yet professional approach made a stressful situation much easier. I refer them to other entrepreneurs with legal issues",
   },
   {
     image: siphoImg,
     name: "Sipho Radebe",
     title: "Property Developer, Durban",
-    text: "Working with Mulaudzi Attorneys on several property transactions and development agreements has been outstanding. Their thorough due diligence, precise drafting, and strong negotiation skills saved me both time and money on multiple occasions. They are always accessible, explain legal concepts in plain language, and genuinely care about achieving the best outcome for their clients. For anyone in real estate or commercial property in South Africa, they are a top choice.",
+    text: "They are always accessible, explain legal concepts in plain language, and genuinely care about achieving the best outcome for their clients",
   },
   {
     image: leratoImg,
     name: "Lerato Khumalo",
     title: "HR Director, Cape Town",
-    text: "Mulaudzi Attorneys assisted us with a difficult labour dispute and subsequent CCMA proceedings. Their knowledge of South African employment law is impressive, and they guided us step-by-step with sound, practical strategies. We achieved a very favourable settlement thanks to their preparation and representation. What stood out most was their calm, confident manner and genuine commitment to our company's success. I highly recommend their services to any business facing workplace legal challenges.",
+    text: "Their knowledge of South African employment law is impressive, and they guided us step-by-step with sound, practical strategies.",
   },
 ];
 

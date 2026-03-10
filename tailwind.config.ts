@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ['"Instrument Serif"', 'serif'],
+        heading: ['"EB Garamond"', 'serif'],
         body: ['"Satoshi"', 'sans-serif'],
       },
       colors: {
