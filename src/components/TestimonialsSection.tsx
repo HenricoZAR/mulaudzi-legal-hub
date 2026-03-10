@@ -28,7 +28,7 @@ const testimonials = [
     image: leratoImg,
     name: "Lerato Khumalo",
     title: "HR Director, Cape Town",
-    text: "Mulaudzi Attorneys assisted us with a difficult labour dispute and subsequent CCMA proceedings. Their knowledge of South African employment law is impressive, and they guided us step-by-step with sound, practical strategies. We achieved a very favourable settlement thanks to their preparation and representation. What stood out most was their calm, confident manner and genuine commitment to our company's success. I highly recommend their services to any business facing workplace legal challenges.",
+    text: "Their knowledge of South African employment law is impressive, and they guided us step-by-step with sound, practical strategies.",
   },
 ];
 

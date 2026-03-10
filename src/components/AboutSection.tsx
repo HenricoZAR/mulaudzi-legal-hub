@@ -66,7 +66,7 @@ const AboutSection = () => {
                 {/* Black background ring for text */}
                 <circle cx="56" cy="56" r="50" fill="none" stroke="hsl(0, 0%, 0%)" strokeWidth="12" opacity="0.85" />
                 <text fill="hsl(42, 90%, 46%)" fontSize="8" fontFamily="Satoshi, sans-serif" fontWeight="600" letterSpacing="3.5">
-                  <textPath href="#circlePath">MULAUDZI JOHN INCORPORATED ATTORNEYS •</textPath>
+                  <textPath href="#circlePath">MULAUDZI JOHN INCORPORATED •</textPath>
                 </text>
               </svg>
             </div>

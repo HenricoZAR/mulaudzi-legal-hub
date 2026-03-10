@@ -17,7 +17,7 @@ const ServicesSlider = () => {
   const doubled = [...services, ...services];
 
   return (
-    <section className="py-10 bg-gold overflow-hidden">
+    <section className="py-14 bg-gold overflow-hidden">
       <div className="animate-marquee flex whitespace-nowrap">
         {doubled.map((service, i) => {
           const Icon = service.icon;

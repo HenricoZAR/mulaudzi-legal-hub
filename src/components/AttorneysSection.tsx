@@ -80,6 +80,8 @@ const AttorneysSection = () => {
                   <img
                     src={attorney.image}
                     alt={attorney.name}
+                    loading="eager"
+                    fetchPriority="high"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   {/* Gold hover overlay */}
