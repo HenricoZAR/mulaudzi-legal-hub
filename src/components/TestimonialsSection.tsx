@@ -35,8 +35,16 @@ const testimonials = [
 const TestimonialsSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [hoveredQuote, setHoveredQuote] = useState<number | null>(null);
+  const [isMobile, setIsMobile] = useState(false);
 
-  const maxIndex = testimonials.length - 2;
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
+
+  const maxIndex = isMobile ? testimonials.length - 1 : testimonials.length - 2;
   const next = () => setCurrentIndex((p) => (p >= maxIndex ? 0 : p + 1));
   const prev = () => setCurrentIndex((p) => (p <= 0 ? maxIndex : p - 1));
 
@@ -86,18 +94,19 @@ const TestimonialsSection = () => {
         <div className="overflow-hidden">
           <div
             className="flex gap-6 transition-transform duration-500 ease-in-out"
-            style={{ transform: `translateX(-${currentIndex * 50}%)` }}
+            style={{ transform: `translateX(-${currentIndex * (isMobile ? 100 : 50)}%)` }}
           >
             {testimonials.map((t, i) => (
               <div
                 key={i}
-                className="min-w-[calc(50%-12px)] flex-shrink-0 bg-background rounded-2xl p-8 relative shadow-sm"
+                className="min-w-[calc(100%-12px)] md:min-w-[calc(50%-12px)] flex-shrink-0 bg-background rounded-2xl p-6 md:p-8 relative shadow-sm"
                 style={{
                   borderBottomWidth: '4px',
                   borderBottomStyle: 'solid',
                   borderBottomColor: 'hsl(var(--gold))',
                   borderBottomLeftRadius: '1rem',
                   borderBottomRightRadius: '1rem',
+                  maxWidth: '520px',
                 }}
               >
                 {/* Quote icon top-right */}

@@ -102,14 +102,14 @@ const HeroSection = () => {
         </div>
 
         {/* Right: Slide Image */}
-        <div className="flex-1 flex justify-center lg:justify-end pr-8 lg:pr-12">
-          <div className="relative">
+        <div className="flex-1 flex justify-center lg:justify-end px-4 sm:px-6 lg:pr-12">
+          <div className="relative w-full max-w-[280px] sm:max-w-[320px] md:max-w-[400px] lg:max-w-[450px]">
             {/* Gold decorative border */}
             <div className="absolute -inset-3 border-2 border-gold rounded-tr-3xl rounded-bl-3xl rounded-tl-none rounded-br-none z-0" />
             <img
               src={slide.image}
               alt={slide.subtitle}
-              className={`relative z-10 w-[320px] md:w-[400px] lg:w-[450px] h-[400px] md:h-[480px] lg:h-[520px] object-cover rounded-tr-3xl rounded-bl-3xl transition-opacity duration-500 ${animating ? "opacity-100" : "opacity-0"}`}
+              className={`relative z-10 w-full h-[350px] sm:h-[400px] md:h-[480px] lg:h-[520px] object-cover rounded-tr-3xl rounded-bl-3xl transition-opacity duration-500 ${animating ? "opacity-100" : "opacity-0"}`}
             />
           </div>
         </div>
