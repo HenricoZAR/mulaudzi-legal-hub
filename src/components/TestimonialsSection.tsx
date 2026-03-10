@@ -22,7 +22,7 @@ const testimonials = [
     image: siphoImg,
     name: "Sipho Radebe",
     title: "Property Developer, Durban",
-    text: "Working with Mulaudzi Attorneys on several property transactions and development agreements has been outstanding. Their thorough due diligence, precise drafting, and strong negotiation skills saved me both time and money on multiple occasions. They are always accessible, explain legal concepts in plain language, and genuinely care about achieving the best outcome for their clients. For anyone in real estate or commercial property in South Africa, they are a top choice.",
+    text: "They are always accessible, explain legal concepts in plain language, and genuinely care about achieving the best outcome for their clients",
   },
   {
     image: leratoImg,
